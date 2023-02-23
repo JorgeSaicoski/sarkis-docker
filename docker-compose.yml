@@ -4,11 +4,11 @@ services:
     web:
 
         build:
-          context: Sarkis/
+          context: sarkis-svelte
         container_name: "sarkis-svelte"
         restart: unless-stopped
         working_dir: /app
         volumes:
-          - ./Sarkis:/app
+          - ./sarkis-svelte:/app
         ports:
           - 80:3000
